@@ -6,27 +6,43 @@
         <script type="text/javascript">
         var userName = prompt("Hi there! What's your name?");
         console.log("User name: "+userName);
+          alert("Nice to meet you, "+userName+"! It's guessing time!");
+
         var questionOne = confirm("OK, "+userName+"\n\nDo I speak German?");
         console.log("Question one: "+questionOne);
             if (questionOne) {
-                alert("Yes I do! Just enough to have a conversation :>");
+                alert("Yes I do,"+userName+"! Just enough to have a conversation :>");
             } else {
-                alert("Sorry, that's wrong! Maybe you mixed it up with another language :>");
+                alert("Sorry, that's wrong! Maybe you mixed it up with another language, "+userName+" :>");
             }
-        console.log("Question two: "+questionTwo);
+
         var questionTwo = confirm("Alright! \n\nDo I work at Starbucks?");
+        console.log("Question two: "+questionTwo);
             if (questionTwo) {
-                alert("Nope, I used to, but not anymore.");
+                alert("Aww, sorry,"+userName+". I used to, but not anymore.");
             } else {
-                alert("You're right! Not anymore :>");
+                alert("You're right "+userName+"! Not anymore :>");
             }
-        console.log("Question three: "+questionThree);
-        var questionThree = confirm("Two down, two to go! \n\nDoes my oldest cat's name start with an R?");
+
+        var questionThree = confirm("Two down, two to go "+userName+"! \n\nDoes my oldest cat's name start with an R?");
+        console.log("Question three: "+questionThree);   
             if (questionThree) {
-                alert("Oops! My youngest cat's name starts with an R. (Ronan)");
+                alert("Gotcha, "+userName+"! My youngest cat's name starts with an R. (Ronan)");
             } else {
-                alert("You got it! His name starts with a B! (Bogey)");
+                alert("You got it, "+userName+"! His name starts with a B! (Bogey)");
             }
+
+        var number = 8;
+        var questionFour = prompt("Finish line is in sight, "+userName+"! Last question: how many pets are in my house?");
+        console.log("Question four: "+questionFour);    
+        
+        if (questionFour < number) {
+            alert("I wish! Too low!");  
+         } else if (questionFour > number) {
+            alert("Whoa nelly! Too many!");
+         } else {
+            alert("You got it! " + number+" pets in the house. Too many for me.");
+         }
         </script>
     </head>
     <body>
