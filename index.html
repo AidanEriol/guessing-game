@@ -1,7 +1,117 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <h1>Git example</h1>
-  </body>
+  <head>
+    <title>The Hello World page</title>
+      <script type ="text/javascript">
+        var userName = prompt("Hi there! What's your name?");
+        console.log("User name: "+userName);
+          alert("Nice to meet you, "+userName+"! It's guessing time!");
 
+        var questionOne = confirm("OK, "+userName+"\n\nDo I speak German?");
+        console.log("Question one: "+questionOne);
+            if (questionOne) {
+                alert("I do speak German, "+userName+"! Just enough to have a conversation :>");
+            } else {
+                alert("Sorry, that's wrong! I speak some German, Spanish, and ASL, "+userName+" :>");
+            }
+
+        var questionTwo = confirm("Alright! \n\nDo I work at Starbucks?");
+        console.log("Question two: "+questionTwo);
+            if (questionTwo) {
+                alert("Aww, sorry, "+userName+". I used to work at Starbucks, but not anymore.");
+            } else {
+                alert("You're right, "+userName+"! I don't work at Starbucks anymore. :>");
+            }
+
+        var questionThree = confirm("Two down, two to go, "+userName+"! \n\nDoes my oldest cat's name start with an R?");
+        console.log("Question three: "+questionThree);   
+            if (questionThree) {
+                alert("Gotcha, "+userName+"! My youngest cat's name starts with an R. (Ronan)");
+            } else {
+                alert("You got it, "+userName+"! My oldest cat's name starts with a B! (Bogey)");
+            }
+
+        var number = 8;
+        var questionFour = prompt("Finish line is in sight, "+userName+"! Last question: how many pets are in my house?");
+        console.log("Question four: "+questionFour);  
+       
+        if (questionFour < number) {
+            alert("I wish! Too low, "+userName+"!");  
+         } else if (questionFour > number) {
+            alert("Whoa, nelly! Too many, "+userName+"!");
+         } else {
+            alert("You got it! " +number+" pets in the house. Too many for me.");
+         }
+      </script>
+  </head>
+    <style>
+
+    body {
+      font-family:sans-serif;
+    }
+
+    </style>
+  <body>
+
+        <h1>It's My Life&trade;</h1>
+      <p>Hey, what's up <script>document.write(name);</script>! I'm Danny and here's some stuff about me!</p>
+      <p>I live with my best friend, her 3 dogs, 2 cats, and also my dog and 2 cats. 8 pets total in one little townhouse. You'll probably meet my dog Gansey at some point, I try to bring him on Mondays. My two cats are named Bogey and Ronan, ages 18 and 2 respectively. I named Gansey and Ronan for two characters from my favorite book series, <a href="http://www.maggiestiefvater.com/the-raven-boys/">The Raven Cycle</a> by <a href="http://www.maggiestiefvater.com/">Maggie Stiefvater</a>. Here's some pictures of them!
+        <div class="Gansey">
+
+          <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/27067300_2068821016727162_8853192677932670078_n.jpg?oh=ba9955aa73547caf7b9c892fb81e2b24&oe=5ADDFC58" alt="This is Gansey, my dog!" title="My weird looking dog, Gansey!" height = "200">
+          </img>
+        </div>
+
+        <div class="Ronan">
+          <img src ="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/27073272_2068821280060469_4449246929381318560_n.jpg?oh=d6083fcdd7f401d20ab041a87760f9c0&oe=5ADE8C37" alt = "This one is Ronan, my little black cat!" title="My little black kitty, Ronan!" height = "200">
+          </img>
+        </div>
+
+        <div class="Bogey">
+          <img src ="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/27067680_2068821303393800_400335290064477925_n.jpg?oh=d78b63cb354342e94e626e3156ff2560&oe=5B25AFAF" alt = "This old man cat is Bogey!" title="The old man, Bogey!" height = "200">
+          </img>
+        </div>
+
+      </p>
+      <br>A little more about me; I'm 24 years old, I speak conversational German, Spanish, and ASL. I wouldn't say I'm fluent but I'm working on it. I used to know Japanese but I've forgotten it since high school. In my spare time, I still study and practice those 3 languages, but I think I've given up on Japanese. Oh! I've also been studying Esperantu when I'm not practicing the other 3, since it's a kind of universal language and I could use it while traveling if I don't speak any native languages! It's super cool and it's an "invented" language, so I'm really interested in it.</p>
+
+      <p>So my experience in coding is very minimal. I took Web Design 101 in high school, for one term since I was dropping a tyrannical Journalism class. It had already been 3 weeks since the classes had started, so I was behind on everything. My teacher, Mr. Guthrie, was super nice and told me that I could catch up on all the assignments I missed during the free hour. By the end of my first class, I had caught up and gone ahead of everyone else. It just seemed to click with me, but I didn't think it was something that was going to be a sustainable career, and besides, I wanted to be a vet anyway.
+
+      <br>Well, after 2 years of college and a couple of shadowing opportunites, I decided veterinary medicine wasn't for me. So I skipped out on school altogether for about 5 years, instead just jumping around a few different jobs. I've been a barista for about 5 or 6 years, going from Starbucks to a local coffee shop, Floyds Coffee. I actually met quite a few people from Code Fellows from my time working at Floyds on the corner of Salmon and 3rd, when the Lotus was still operational and Code Fellows was in the building a few doors down. It was what got me thinking about Alchemy Code Lab as a thing I wanted to persue.</p>
+
+        <h1>A Grocery List</h1>
+          <h2>EXP points</h2>
+        <ul>
+          <li>Web Design 101 class (2008)
+          <li>Bakery Job (2012-2013)
+          <li>Starbucks (2013-2015)
+          <li>Floyd's Coffee (2014-present)
+          <li>40 LBS Coffee Bar (2016-2017)
+          <li>Men's Wearhouse (2017-present)
+        </ul>
+
+          <h2>Class Type</h2>
+        <ul>
+          <li>High School (2007-2011)
+          <li>Some Community College (2011-2013)
+          <li>Alchemy Code Lab (a few days ago-hopefully 2019)
+        </ul>
+
+          <h2>Goals</h2>
+        <ul>
+          <li>Finish Alchemy Code Lab program, either going to Fullstack or Python
+          <li>Look for a job, maybe at Elemental or Jama
+          <li>Move into an apartment for just me, I've had roommates for Way Too Long&trade;
+          <li>Work out a financial plan that will allow me to buy and board a horse
+          <li>Stay up to date on code languages
+          <li>Learn a new spoken language
+        </ul>
+
+          <p>By the way, here's a video clip of one of my favorite podcasts. I got really into podcasts a couple years ago, and My Brother, My Brother, and Me is some top tier comedy. If you like what you hear, try giving them a listen <a href="http://www.maximumfun.org/shows/my-brother-my-brother-and-me">here!</a>
+            <br><br>
+        <iframe width="420" height="315"
+        src="https://www.youtube.com/embed/oH7jPAvFTU8">
+        </iframe>
+          </p>
+    </body>
 </html>
