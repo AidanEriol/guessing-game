@@ -26,24 +26,31 @@
                 alert("You're right, "+userName+"! I don't work at Starbucks anymore. :>");
             }
 
-        var questionThree = confirm("Two down, two to go, "+userName+"! \n\nDoes my oldest cat's name start with an R?");
+        var questionThree = confirm("Two down, three to go, "+userName+"! \n\nDoes my oldest cat's name start with an R?");
         console.log("Question three: "+questionThree);   
             if (questionThree) {
-                alert("Gotcha, "+userName+"! My youngest cat's name starts with an R. (Ronan)");
+                alert("Almost, "+userName+"! My youngest cat's name starts with an R. (Ronan)");
             } else {
                 alert("You got it, "+userName+"! My oldest cat's name starts with a B! (Bogey)");
             }
 
-        var questionFour = 0;
+        questionFour = prompt("So, " +userName+ ", is Maggie Stiefvater the author of my favorite series?");
+            if (questionFour.toLowerCase() === "yes" || questionFour.toLowerCase() === "y") {
+              alert("Yeah, that's right!");
+            } else (questionFour.toLowerCase() === "no" || questionFour.toLowerCase() === "n"); {
+              alert("Nope, that's her name!");
+            }
+
+        var questionFive = 0;
         var number = 8;
-        while (questionFour < 8 || questionFour > 8) {
-          var questionFour = prompt("How about... how many pets are in my house?");
-        console.log("Question four: "+questionFour);  
-        if (questionFour === number) {
-            alert("You got it," + userName +"! Too many for me.");  
-         } else if (questionFour > number) {
+        while (questionFive < 8 || questionFive > 8) {
+          questionFive = prompt("Last question, " +userName+ "! How about... how many pets are in my house?");
+        console.log("Question five: "+questionFive);  
+        if (questionFive == number) {
+            alert("You got it, " + userName +"! Too many for me.");  
+         } else if (questionFive > number) {
             alert("Whoa, nelly! Too many, "+userName+"!");
-         } else (questionFour < number); {
+         } else {
             alert("I wish! Too low, "+userName+"!");
          }
         }
@@ -120,5 +127,11 @@
         src="https://www.youtube.com/embed/oH7jPAvFTU8">
         </iframe>
           </p>
+          <script type="text/javascript">
+          for(var counter = 1; counter < 5; counter++) {
+            document.write("Counter = " + counter + "<br>");
+          }
+          </script>
+
     </body>
 </html>
