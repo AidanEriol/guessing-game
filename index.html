@@ -3,9 +3,12 @@
   <head>
     <title>The Hello World page</title>
       <script type ="text/javascript">
-        var userName = prompt("Hi there! What's your name?");
+        var userName = "";
+          while (userName == null || userName.trim() == "") {
+          userName = prompt("Please tell us your name!");
+      }
         console.log("User name: "+userName);
-          alert("Nice to meet you, "+userName+"! It's guessing time!");
+        alert("Nice to meet you, "+userName+"! It's guessing time!");
 
         var questionOne = confirm("OK, "+userName+"\n\nDo I speak German?");
         console.log("Question one: "+questionOne);
@@ -31,17 +34,21 @@
                 alert("You got it, "+userName+"! My oldest cat's name starts with a B! (Bogey)");
             }
 
+        var questionFour = 0;
         var number = 8;
-        var questionFour = prompt("Finish line is in sight, "+userName+"! Last question: how many pets are in my house?");
+        while (questionFour < 8 || questionFour > 8) {
+          var questionFour = prompt("How about... how many pets are in my house?");
         console.log("Question four: "+questionFour);  
-       
-        if (questionFour < number) {
-            alert("I wish! Too low, "+userName+"!");  
+        if (questionFour === number) {
+            alert("You got it," + userName +"! Too many for me.");  
          } else if (questionFour > number) {
             alert("Whoa, nelly! Too many, "+userName+"!");
-         } else {
-            alert("You got it! " +number+" pets in the house. Too many for me.");
+         } else (questionFour < number); {
+            alert("I wish! Too low, "+userName+"!");
          }
+        }
+
+      
       </script>
   </head>
     <style>
