@@ -10,52 +10,70 @@
         console.log("User name: "+userName);
         alert("Nice to meet you, "+userName+"! It's guessing time!");
 
+        var correctAnswer = 0;
+
         var questionOne = confirm("OK, "+userName+"\n\nDo I speak German?");
         console.log("Question one: "+questionOne);
-            if (questionOne) {
-                alert("I do speak German, "+userName+"! Just enough to have a conversation :>");
-            } else {
-                alert("Sorry, that's wrong! I speak some German, Spanish, and ASL, "+userName+" :>");
-            }
+          if (questionOne) {
+            correctAnswer+=1;
+        console.log("Correct answer: "+correctAnswer);
+            alert("I do speak German, "+userName+"! Just enough to have a conversation :>");
+          } else {
+            alert("Sorry, that's wrong! I speak some German, Spanish, and ASL, "+userName+" :>");
+          }
 
         var questionTwo = confirm("Alright! \n\nDo I work at Starbucks?");
         console.log("Question two: "+questionTwo);
-            if (questionTwo) {
-                alert("Aww, sorry, "+userName+". I used to work at Starbucks, but not anymore.");
-            } else {
-                alert("You're right, "+userName+"! I don't work at Starbucks anymore. :>");
-            }
+          if (questionTwo) {
+            alert("Aww, sorry, "+userName+". I used to work at Starbucks, but not anymore.");
+          } else {
+            correctAnswer+=1;
+            console.log("Correct answer: "+correctAnswer);
+            alert("You're right, "+userName+"! I don't work at Starbucks anymore. :>");
+          }
 
         var questionThree = confirm("Two down, three to go, "+userName+"! \n\nDoes my oldest cat's name start with an R?");
         console.log("Question three: "+questionThree);   
-            if (questionThree) {
-                alert("Almost, "+userName+"! My youngest cat's name starts with an R. (Ronan)");
-            } else {
-                alert("You got it, "+userName+"! My oldest cat's name starts with a B! (Bogey)");
-            }
+          if (questionThree) {
+            alert("Almost, "+userName+"! My youngest cat's name starts with an R. (Ronan)");
+          } else {
+            correctAnswer+=1;
+        console.log("Correct answer: "+correctAnswer);
+            alert("You got it, "+userName+"! My oldest cat's name starts with a B! (Bogey)");
+           }
 
         questionFour = prompt("So, " +userName+ ", is Maggie Stiefvater the author of my favorite series?");
-            if (questionFour.toLowerCase() === "yes" || questionFour.toLowerCase() === "y") {
-              alert("Yeah, that's right!");
-            } else (questionFour.toLowerCase() === "no" || questionFour.toLowerCase() === "n"); {
-              alert("Nope, that's her name!");
-            }
+        console.log("Question four: " +questionFour);
+        if (questionFour.toLowerCase() === "yes" || questionFour.toLowerCase() === "y") {
+          correctAnswer+=1;
+        console.log("Correct answer: "+correctAnswer);
+          alert("You're right, "+userName+"!");
+        } else {
+          alert("Sorry, "+userName+", but that's her name!");
+        }
 
         var questionFive = 0;
         var number = 8;
         while (questionFive < 8 || questionFive > 8) {
           questionFive = prompt("Last question, " +userName+ "! How about... how many pets are in my house?");
         console.log("Question five: "+questionFive);  
-        if (questionFive == number) {
+        if (questionFive == number) {              // guessed 8 
+          correctAnswer+=1;
+        console.log("Correct answer: "+correctAnswer);
             alert("You got it, " + userName +"! Too many for me.");  
-         } else if (questionFive > number) {
+         } else if (questionFive > number) {       // guessed more than 8
             alert("Whoa, nelly! Too many, "+userName+"!");
-         } else {
+         } else {                            // don't need to put a < 8 bc above already solves that
             alert("I wish! Too low, "+userName+"!");
          }
         }
 
-      
+        var score = confirm("You're done, "+userName+"! You got "+correctAnswer+" questions right out of 5!");
+
+
+
+
+
       </script>
   </head>
     <style>
@@ -68,7 +86,7 @@
   <body>
 
         <h1>It's My Life&trade;</h1>
-      <p>Hey, what's up <script>document.write(name);</script>! I'm Danny and here's some stuff about me!</p>
+      <p>Hey, what's up <script type="text/javascript">document.write(userName);</script>! I'm Danny and here's some stuff about me!</p>
       <p>I live with my best friend, her 3 dogs, 2 cats, and also my dog and 2 cats. 8 pets total in one little townhouse. You'll probably meet my dog Gansey at some point, I try to bring him on Mondays. My two cats are named Bogey and Ronan, ages 18 and 2 respectively. I named Gansey and Ronan for two characters from my favorite book series, <a href="http://www.maggiestiefvater.com/the-raven-boys/">The Raven Cycle</a> by <a href="http://www.maggiestiefvater.com/">Maggie Stiefvater</a>. Here's some pictures of them!
         <div class="Gansey">
 
@@ -128,8 +146,8 @@
         </iframe>
           </p>
           <script type="text/javascript">
-          for(var counter = 1; counter < 5; counter++) {
-            document.write("Counter = " + counter + "<br>");
+          for(var counter = 1; counter < 6; counter++) {
+            document.write("Question = " + counter + "<br>");
           }
           </script>
 
