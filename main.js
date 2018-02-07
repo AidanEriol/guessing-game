@@ -31,13 +31,13 @@
         (userName.indexOf(" ") < 0);
         userName = userName[0].toUpperCase() + userName.substring(1).toLowerCase();
 
-    alert("Hello, "+userName+". Would you like to play a game?");
+    confirm("Hello, "+userName+".\n\nWould you like to play a game?");
     console.log("User name: "+userName);
-
 
 var correctAnswer = 0;
 
-function speakGerman() {
+function playGame() {
+
     var speakGerman = confirm("OK, "+userName+"\n\nDo I speak German?");
     console.log("Question one: "+speakGerman);
     if (speakGerman) {
@@ -47,9 +47,9 @@ function speakGerman() {
     } else {
     alert("Sorry, that's wrong! I speak some German, Spanish, and ASL, "+userName+" :>");
     }
-}
 
-function starbucksJob() {
+
+
     var starbucksJob = confirm("Alright! \n\nDo I work at Starbucks?");
     console.log("Question two: "+starbucksJob);
     if (starbucksJob) {
@@ -59,9 +59,9 @@ function starbucksJob() {
     console.log("Correct answer: "+correctAnswer);
     alert("You're right, "+userName+"! I don't work at Starbucks anymore. :>");
     }
-}
 
-function catName () {
+
+
     var catName = confirm("Two down, three to go, "+userName+"! \n\nDoes my oldest cat's name start with an R?");
     console.log("Question three: "+catName);   
     if (catName) {
@@ -71,9 +71,9 @@ function catName () {
     console.log("Correct answer: "+correctAnswer);
     alert("You got it, "+userName+"! My oldest cat's name starts with a B! (Bogey)");
     }
-}
 
-function favoriteAuthor() {
+
+
     var favoriteAuthor = prompt("So, " +userName+ ", is Maggie Stiefvater the author of my favorite series?");
     console.log("Question four: " +favoriteAuthor);
     if (favoriteAuthor.toLowerCase() === "yes" || favoriteAuthor.toLowerCase() === "y") {
@@ -83,9 +83,9 @@ function favoriteAuthor() {
     } else {
     alert("Sorry, "+userName+", but that's her name!");
     }
-}
 
-function housePets() {
+
+
     var housePets = 0;
     var number = 8;
     while (housePets < 8 || housePets > 8) {
