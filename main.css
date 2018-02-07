@@ -1,0 +1,34 @@
+body {
+    background-image: url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2 {
+    color:blanchedalmond;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    list-style-type: none;
+}
+
+ul, ol {
+    color:blanchedalmond;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    list-style-type: none;
+}
+
+p {
+    color:aquamarine;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.highlight {
+    background-color:hotpink;
+}
+
+a {
+    text-decoration: none;
+    background-color: blueviolet;
+    color: whitesmoke;
+}
