@@ -36,6 +36,11 @@
 var correctAnswer = 0;
 
 function playGame() {
+    speakGerman();
+    starbucksJob();
+    catName();
+    favoriteAuthor();
+    housePets();
 
     function speakGerman() {
     var speakGerman = confirm("OK, "+userName+"\n\nDo I speak German?");
@@ -79,9 +84,9 @@ function playGame() {
     if (favoriteAuthor.toLowerCase() === "yes" || favoriteAuthor.toLowerCase() === "y") {
     correctAnswer+=1;
     console.log("Correct answer: "+correctAnswer);
-    alert("You're right, "+userName+"!");
+    document.getElementById("favoriteAuthorP").innerHTML = "You're right, "+userName+"!";
     } else {
-    alert("Sorry, "+userName+", but that's her name!");
+    document.getElementById("favoriteAuthorP").innerHTML = "Sorry, "+userName+", but that's her name!";
     }
     }
 
@@ -94,7 +99,7 @@ function playGame() {
     if (housePets == number) {              // guessed 8 
     correctAnswer+=1;
     console.log("Correct answer: "+correctAnswer);
-    alert("You got it, " + userName +"! Too many for me.");  
+    document.getElementById("housePetsP").innerHTML = "You got it, " + userName +"! Too many for me.";  
     } else if (housePets > number) {       // guessed more than 8
     alert("Whoa, nelly! Too many, "+userName+"!");
     } else {                            // don't need to put a < 8 bc above already solves that
