@@ -25,13 +25,13 @@
 
     var userName = "";
 
+    function userName() {
     do {
         userName = prompt("What's your name?");
     } while (userName == null || userName.trim() == "")
         (userName.indexOf(" ") < 0);
         userName = userName[0].toUpperCase() + userName.substring(1).toLowerCase();
-    
-    // ask user to play alert on line 107
+}
 
 var correctAnswer = 0;
 
@@ -107,11 +107,10 @@ function playGame() {
     }
     }
     }
+
 }
 
-confirm("Hello, "+userName+".\n\nWould you like to play a game?");
-console.log("User name: "+userName);
-
 function score() {
-    var score = confirm("You're done, "+userName+"! You got "+correctAnswer+" questions right out of 5!");
+    var score = alert("You're done, "+userName+"! You got "+correctAnswer+" questions right out of 5!");
+    document.getElementById("scoreP").innerHTML = "You're done, "+userName+"! You got "+correctAnswer+" questions right out of 5!";
 }
