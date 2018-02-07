@@ -1,34 +1,55 @@
 body {
-    background-image: url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);
-    background-position: center;
+    background-image: url(https://demo.yootheme.com/widgetkit/joomla/images/yootheme/widgetkit/nature-07.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 h1, h2 {
-    color:blanchedalmond;
+    color:rgb(255, 242, 219);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align:center;
     list-style-type: none;
 }
 
 ul, ol {
-    color:blanchedalmond;
+    color:rgb(255, 250, 230);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align:center;
     list-style-type: none;
+    border-color: rgb(7, 5, 3); 
 }
 
-p {
-    color:aquamarine;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#bean {
+    text-align: center;
 }
-.highlight {
-    background-color:hotpink;
+
+#ghostbox {
+    opacity: 0.5;
+    margin: 35px;
+    background-color: slategrey;
+    border: 1px;
+    filter: alpha(opacity=60); /* for IE 8.0 and earlier */
+}
+
+#ghostbox p {
+    color: rgb(255, 250, 230);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin: 5%;
+    opacity: 1.0;
+    word-wrap: normal;
+}
+
+#ghostbox:hover {
+    opacity: 0.8;
+}
+
+#pictures {
+    text-align: center;
 }
 
 a {
     text-decoration: none;
-    background-color: blueviolet;
-    color: whitesmoke;
+    color: blueviolet;
 }
