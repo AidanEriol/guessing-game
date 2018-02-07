@@ -24,7 +24,7 @@
 
 var userName = "";
 
-do  {  userName = prompt("What's your name?");
+do  {userName = prompt("What's your name?");
     } while (userName == null || userName.trim() == "")
     (userName.indexOf(" ") < 0);
     userName = userName[0].toUpperCase() + userName.substring(1).toLowerCase();
@@ -34,8 +34,8 @@ console.log("User name: "+userName);
 
 
 var correctAnswer = 0;
-
-var speakGerman = confirm("OK, "+userName+"\n\nDo I speak German?");
+function speakGerman() {
+    var speakGerman = confirm("OK, "+userName+"\n\nDo I speak German?");
 console.log("Question one: "+speakGerman);
 if (speakGerman) {
   correctAnswer+=1;
@@ -44,6 +44,8 @@ console.log("Correct answer: "+correctAnswer);
 } else {
   alert("Sorry, that's wrong! I speak some German, Spanish, and ASL, "+userName+" :>");
 }
+}
+
 
 var starbucksJob = confirm("Alright! \n\nDo I work at Starbucks?");
 console.log("Question two: "+starbucksJob);
