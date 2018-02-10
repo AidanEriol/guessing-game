@@ -22,12 +22,10 @@
 //     document.getElementById("proper-name").innerHTML = name;
 // }
 
-
     var userName = "";
-
-    function userName() {
+    function playerName() {
     do {
-        userName = prompt("What's your name?");
+       userName = prompt("What's your name?");
     } while (userName == null || userName.trim() == "")
         (userName.indexOf(" ") < 0);
         userName = userName[0].toUpperCase() + userName.substring(1).toLowerCase();
@@ -46,11 +44,11 @@ function playGame() {
     var speakGerman = confirm("OK, "+userName+"\n\nDo I speak German?");
     console.log("Question one: "+speakGerman);
     if (speakGerman) {
-    correctAnswer+=1;
-    console.log("Correct answer: "+correctAnswer);
-    document.getElementById("languageP").innerHTML = "I do speak German, "+userName+"! Just enough to have a conversation :>";
+        correctAnswer+=1;
+        console.log("Correct answer: "+correctAnswer);
+        document.getElementById("languageP").innerHTML = "I do speak German, "+userName+"! Just enough to have a conversation :>";
     } else {
-    document.getElementById("languageP").innerHTML = "Sorry, that's wrong! I speak some German, Spanish, and ASL, "+userName+" :>";
+        document.getElementById("languageP").innerHTML = "Sorry, that's wrong! I speak some German, Spanish, and ASL, "+userName+" :>";
     }
     }
 
@@ -58,11 +56,11 @@ function playGame() {
     var starbucksJob = confirm("Alright! \n\nDo I work at Starbucks?");
     console.log("Question two: "+starbucksJob);
     if (starbucksJob) {
-    document.getElementById("starbucksP").innerHTML = "Aww, sorry, "+userName+". I used to work at Starbucks, but not anymore.";
+        document.getElementById("starbucksP").innerHTML = "Aww, sorry, "+userName+". I used to work at Starbucks, but not anymore.";
     } else {
-    correctAnswer+=1;
-    console.log("Correct answer: "+correctAnswer);
-    document.getElementById("starbucksP").innerHTML = "You're right, "+userName+"! I don't work at Starbucks anymore. :>";
+        correctAnswer+=1;
+        console.log("Correct answer: "+correctAnswer);
+        document.getElementById("starbucksP").innerHTML = "You're right, "+userName+"! I don't work at Starbucks anymore. :>";
     }
     }
 
@@ -70,23 +68,23 @@ function playGame() {
     var catName = confirm("Two down, three to go, "+userName+"! \n\nDoes my oldest cat's name start with an R?");
     console.log("Question three: "+catName);   
     if (catName) {
-    document.getElementById("catNameP").innerHTML = "Almost, "+userName+"! My youngest cat's name starts with an R. (Ronan)";
+        document.getElementById("catNameP").innerHTML = "Almost, "+userName+"! My youngest cat's name starts with an R. (Ronan)";
     } else {
-    correctAnswer+=1;
-    console.log("Correct answer: "+correctAnswer);
-    document.getElementById("catNameP").innerHTML = "You got it, "+userName+"! My oldest cat's name starts with a B! (Bogey)";
+        correctAnswer+=1;
+        console.log("Correct answer: "+correctAnswer);
+        document.getElementById("catNameP").innerHTML = "You got it, "+userName+"! My oldest cat's name starts with a B! (Bogey)";
     }
     }
 
     function favoriteAuthor() {
-    var favoriteAuthor = prompt("So, " +userName+ ", is Maggie Stiefvater the author of my favorite series?");
+    var favoriteAuthor = prompt("So, " +userName+ ", who is the author of my favorite series?");
     console.log("Question four: " +favoriteAuthor);
-    if (favoriteAuthor.toLowerCase() === "yes" || favoriteAuthor.toLowerCase() === "y") {
-    correctAnswer+=1;
-    console.log("Correct answer: "+correctAnswer);
-    document.getElementById("favoriteAuthorP").innerHTML = "You're right, "+userName+"!";
+    if (favoriteAuthor.toLowerCase() === "Maggie Stiefvater" || favoriteAuthor.toUpperCase() === "Maggie Stiefvater") {
+        correctAnswer+=1;
+        console.log("Correct answer: "+correctAnswer);
+        document.getElementById("favoriteAuthorP").innerHTML = "You're right, "+userName+"!";
     } else {
-    document.getElementById("favoriteAuthorP").innerHTML = "Sorry, "+userName+", but that's her name!";
+        document.getElementById("favoriteAuthorP").innerHTML = "Sorry, "+userName+", but that's her name!";
     }
     }
 
@@ -94,16 +92,16 @@ function playGame() {
     var housePets = 0;
     var number = 8;
     while (housePets < 8 || housePets > 8) {
-    housePets = prompt("Last question, " +userName+ "! How about... how many pets are in my house?");
-    console.log("Question five: "+housePets);  
+        housePets = prompt("Last question, " +userName+ "! How about... how many pets are in my house?");
+        console.log("Question five: "+housePets);  
     if (housePets == number) {              // guessed 8 
-    correctAnswer+=1;
-    console.log("Correct answer: "+correctAnswer);
-    document.getElementById("housePetsP").innerHTML = "You got it, " + userName +"! Too many for me.";  
+        correctAnswer+=1;
+        console.log("Correct answer: "+correctAnswer);
+        document.getElementById("housePetsP").innerHTML = "You got it, " + userName +"! Too many for me.";  
     } else if (housePets > number) {       // guessed more than 8
-    alert("Whoa, nelly! Too many, "+userName+"!");
+        alert("Whoa, nelly! Too many, "+userName+"!");
     } else {                            // don't need to put a < 8 bc above already solves that
-    alert("I wish! Too low, "+userName+"!");
+        alert("I wish! Too low, "+userName+"!");
     }
     }
     }
