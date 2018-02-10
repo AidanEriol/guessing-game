@@ -73,14 +73,22 @@
             <br><br>
           </p>
         </div>
-        <div id="bean"><iframe width="420" height="315"
+        <div id="bean"><iframe width="520" height="415"
         src="https://www.youtube.com/embed/oH7jPAvFTU8">
         </iframe>
         </div>
          
 
         <div id="ghostbox">
+          <h1>Play a Guessing Game?</h1>
+          <input type="button" value="Tell us your name first!" onclick="playerName()"><br>
+          <input type="button" value="Let's Guess!" onclick="playGame()"><br>
+          <input type="button" value="Find out your score!" onclick="score()"><br>
+        </div>
+
+        <div id="ghostbox">
           <h2>Quiz Answers</h2>
+          <h3><script type="text/javascript">document.getElementById("proper-name").innerHTML = "your name goes here!";</script></h3>
         <ol>
           <li id="languageP">answer 1</li>
           <li id="starbucksP">answer 2</li>
@@ -88,6 +96,7 @@
           <li id="favoriteAuthorP">answer 4</li>
           <li id="housePetsP">answer 5</li>
         </ol>
+        <br>
         <p id="scoreP"></p>
 
       </div>
