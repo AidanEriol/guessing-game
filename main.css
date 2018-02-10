@@ -30,6 +30,7 @@ ul, ol {
     background-color: slategrey;
     border: 1px;
     filter: alpha(opacity=60); /* for IE 8.0 and earlier */
+    text-align: center;
 }
 
 #ghostbox p {
