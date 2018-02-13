@@ -1,27 +1,3 @@
-// do {
-//     userName = prompt("What's your name, young person?");
-// } while (userName.indexOf(" ") < 0);
-// userName = userName[0].toUpperCase() + userName.substring(1).toLowerCase();
-// return userName;
-
-
-// function capitalise(text) {
-//     var makeCaps = true;
-//     var newText ="";
-//     for (index = 0; index < text.length; index++) {
-//         newText += makeCaps? text[index].toUpperCase() : text[index].toLowerCase();
-//         makeCaps = text[index] == " ";
-//     }
-//     return newText;
-// }
-
-// function getProperName() {
-//     var name = getUserName();
-//     name = capitalise(name);
-//     // document.write(name);
-//     document.getElementById("proper-name").innerHTML = name;
-// }
-
     var userName = "";
     function playerName() {
     do {
